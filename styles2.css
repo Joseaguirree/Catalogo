@@ -189,4 +189,49 @@ nav a:hover {
     padding: 20px 0;
     text-align: center;
   }
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce el espacio alrededor del contenido */
+  }
+
+  .product-container {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .product-images {
+    margin-bottom: 20px; /* Añade margen inferior para separar las imágenes */
+  }
+
+  .product-details {
+    text-align: center; /* Centra el texto */
+  }
+
+  .main-image img {
+    width: 100%; /* Hace que la imagen principal ocupe todo el ancho del contenedor */
+  }
+
+  .small-images {
+    flex-direction: row; /* Cambia la dirección del flexbox a fila */
+    justify-content: center; /* Centra las imágenes pequeñas horizontalmente */
+    margin-bottom: 20px; /* Añade margen inferior para separar las imágenes */
+  }
+
+  .small-images img {
+    width: 80px; /* Reduce el tamaño de las imágenes pequeñas */
+    margin-right: 10px; /* Añade margen derecho para separar las imágenes */
+  }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Agrega tus estilos específicos para tabletas aquí */
+}
+
+/* Estilos para pantallas más grandes (escritorio) */
+@media only screen and (min-width: 1025px) {
+  /* Agrega tus estilos específicos para pantallas grandes aquí */
+}
+
   
