@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nosotros</h1>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Productos</a>
+                        <div class="dropdown-content">
+                            <a href="#">Teléfonos</a>
+                            <a href="#">Accesorios</a>
+                            <a href="#">Memoria USB</a>
+                            <a href="#">Disco duro</a>
+                            <!-- Agrega más categorías aquí si es necesario -->
+                        </div>
+                    </li>
+                    <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profiles-container">
+            <div class="profile">
+                <img src="perfil1.jpg" alt="Perfil 1">
+                <h2>Juan Pérez</h2>
+                <p></p>
+            </div>
+            <div class="profile">
+                <img src="perfil2.jpg" alt="Perfil 2">
+                <h2>María Rodríguez</h2>
+                <p></p>
+            </div>
+        </div>
+        <div class="description">
+            <p>Somos una empresa dedicada a ofrecer productos de alta calidad en tecnología. Nuestro objetivo es brindar a nuestros clientes una experiencia de compra única y satisfactoria.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+          <p>&copy; 2024 OnlinePC</p>
+        </div>
+      </footer>
+
+    <script>
+        // JavaScript para cerrar el menú desplegable al hacer clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

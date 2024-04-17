@@ -1,0 +1,144 @@
+/* Reset de estilos */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
+
+header h1 {
+    font-size: 32px;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  float: left;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú desplegable al pasar el ratón */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.profile {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: top;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.profile h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.description p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+/* Estilo para enlaces activos */
+nav ul li a.active {
+    background-color: #f0f0f0; /* Cambia el color de fondo para el enlace activo */
+  }
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+  }

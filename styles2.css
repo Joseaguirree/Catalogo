@@ -1,0 +1,192 @@
+/* Reset de estilos */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  float: left;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Mostrar el menú desplegable al pasar el ratón */
+  nav ul li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .product-container {
+    padding: auto;
+    display: flex;
+    justify-content: space-around; /* Alineación central de los elementos */
+    align-items: center;
+    background-color: #fff; /* Fondo blanco para el contenedor del producto */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Ocultar contenido que se desborde */
+  }
+  
+  .product-images {
+    display: flex;
+  }
+  
+  .small-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear las imágenes pequeñas a la izquierda */
+    margin-right: 20px; /* Añadido margen derecho para separar las imágenes */
+  }
+  
+  .small-images img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 4px; /* Añade bordes redondeados */
+    transition: transform 0.3s; /* Agregamos transición */
+  }
+  
+  .small-images img:hover {
+    transform: scale(1.1); /* Hace que la imagen se agrande ligeramente al pasar el cursor */
+  }
+  
+  .main-image img {
+    width: 300px;
+    height: auto;
+    display: block; /* Asegurar que la imagen se ajuste correctamente */
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s; /* Agregamos transición */
+  }
+  
+  .main-image img:hover {
+    transform: scale(1.1); /* Hace que la imagen se agrande ligeramente al pasar el cursor */
+  }
+  
+  /* Nuevo CSS para el efecto de zoom y panning */
+  .main-image {
+    overflow: hidden; /* Ocultar partes de la imagen que se desbordan */
+  }
+  
+  .main-image img {
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .main-image:hover img {
+    transform: scale(2); /* Aumenta el tamaño de la imagen al pasar el cursor */
+  }
+  
+  .product-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .product-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .specifications {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Añadido margen superior */
+  }
+  
+  .specifications li {
+    margin-bottom: 10px;
+  }
+  
+  .buy-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0a8049;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3; /* Cambiar color al pasar el ratón */
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  

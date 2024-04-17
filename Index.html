@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Catálogo de Productos</h1>
+      <nav>
+        <ul>
+            <li><a href="Index.html" class="active">Inicio</a></li>
+            <li class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                <a href="#">Productos</a>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#">Teléfonos</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Memoria USB</a>
+                    <a href="#">Disco duro</a>
+                    <!-- Agrega más categorías aquí si es necesario -->
+                </div>
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <br>
+      <h2>Nuestros Productos</h2>
+      <br>
+      <section class="products">
+        <article class="product">
+          <a href="producto1.html">
+            <img src="usblenovo.jpg" alt="USB Lenovo">
+          </a>
+          <h3>USB Lenovo</h3>
+          <p>USB 3.0: 2TB</p>
+        </article>
+        <article class="product">
+          <a href="producto2.html">
+            <img src="usbxiaomi.jpg" alt="USB Xiaomi">
+          </a>
+          <h3>USB Xiaomi</h3>
+          <p>USB 3.0: 2TB</p>
+        </article>
+        <article class="product">
+          <a href="producto3.html">
+            <img src="Discoduro.jpg" alt="Disco duro">
+          </a>
+          <h3>Disco Duro</h3>
+          <p>256GB</p>
+        </article>
+        <article class="product">
+          <a href="producto4.html">
+            <img src="nvme.png" alt="M.2 NVMe">
+          </a>
+          <h3>M.2 NVMe</h3>
+          <p>500GB</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 OnlinePC</p>
+    </div>
+  </footer>
+
+  <script>
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('mouseover', () => {
+      dropdown.classList.add('active');
+    });
+
+    dropdown.addEventListener('mouseout', () => {
+      dropdown.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
