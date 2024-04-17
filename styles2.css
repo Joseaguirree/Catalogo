@@ -11,7 +11,7 @@ body {
     padding: 20px 0;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   }
-  
+
   .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -189,6 +189,9 @@ nav a:hover {
     padding: 20px 0;
     text-align: center;
   }
+
+/* Estilos existentes aquí */
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
   .container {
@@ -233,5 +236,3 @@ nav a:hover {
 @media only screen and (min-width: 1025px) {
   /* Agrega tus estilos específicos para pantallas grandes aquí */
 }
-
-  
